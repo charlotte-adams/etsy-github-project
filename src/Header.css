@@ -1,0 +1,11 @@
+.title-nav-wrapper {
+  text-align: center;
+  margin: 10px;
+}
+.logo {
+  font-style: italic;
+  font-size: 20px;
+}
+.nav-link-wrapper {
+  border: 2px black solid;
+}
