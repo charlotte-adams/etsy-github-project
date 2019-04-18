@@ -1,11 +1,21 @@
 .title-nav-wrapper {
-  text-align: center;
+  text-align: left;
   margin: 10px;
 }
 .logo {
   font-style: italic;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 5px;
 }
-.nav-link-wrapper {
-  border: 2px black solid;
+
+.nav-link {
+  text-decoration: none;
+  padding: 5px;
+}
+.main-logo {
+  display: inline-block;
+}
+span.nav-link-wrapper {
+  margin: 5px;
 }

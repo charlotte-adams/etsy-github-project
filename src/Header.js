@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import "./Header.css";
 
 export class Header extends Component {
   render() {
@@ -8,7 +9,7 @@ export class Header extends Component {
         <div className="title-nav-wrapper">
           <div className="main-logo">
             <span className="logo" title="main-logo">
-              Logo Here
+              CA
             </span>
           </div>
           <span className="nav-link-wrapper" title="main-nav">
