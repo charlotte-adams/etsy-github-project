@@ -1,6 +1,6 @@
 .home-page-single-product-card-wrapper {
   background-color: azure;
-  display: flex;
+  margin: 5px;
 }
 
 .each-product-card-container {

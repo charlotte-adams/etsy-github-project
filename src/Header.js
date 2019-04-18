@@ -22,6 +22,11 @@ export class Header extends Component {
               All Products
             </NavLink>
           </span>
+          <span className="nav-link-wrapper">
+            <NavLink className="cart-link" to="/cart">
+              Shopping Cart
+            </NavLink>
+          </span>
         </div>
       </header>
     );

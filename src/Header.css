@@ -13,6 +13,11 @@
   text-decoration: none;
   padding: 5px;
 }
+
+.cart-link {
+  text-decoration: none;
+  padding: 5px;
+}
 .main-logo {
   display: inline-block;
 }
