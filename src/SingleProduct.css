@@ -1,0 +1,8 @@
+.home-page-single-product-card-wrapper {
+  background-color: azure;
+  display: flex;
+}
+
+.each-product-card-container {
+  background-color: pink;
+}
