@@ -1,10 +1,11 @@
-.home-page {
-  border: 2px, solid, purple;
+.home-page-wrapper {
+  background-color: beige;
+  display: flex;
 }
 
-@media (min-width: 600px) {
-  .home-page {
+/* @media (min-width: 600px) {
+  .home-page-wrapper {
     display: flex;
     background: lightcyan;
-  }
-}
+  } */
+/* } */
