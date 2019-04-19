@@ -4,6 +4,17 @@ import { FeaturedItem } from "./FeaturedItem.js";
 import { SingleProduct } from "./SingleProduct.js";
 
 export class Home extends Component {
+  state = { post: {} };
+
+  componentDidMount() {
+    fetch(`${apiUrl()}/current_blog_post`)
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ post: data });
+      })
+      .catch(error => console.error(error));
+  }
+
   render() {
     return (
       <div className="home-page">
