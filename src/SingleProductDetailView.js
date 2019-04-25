@@ -1,27 +1,53 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
 
-import "./SingleProduct.css";
+import "./SingleProductDetailView.css";
 
-export class SingleProduct extends Component {
+export class SingleProductDetailView extends Component {
   state = { product: {} };
 
   componentDidMount() {
     fetch("http://localhost:8000/listings/638754067")
       .then(response => response.json())
       .then(data => {
-        console.log(JSON.parse(data));
-        const product = JSON.parse(data).results[0];
-        this.setState({ product: product });
+        this.setState({ product: data.results[0] });
       })
       .catch(error => console.error(error));
   }
+
   render() {
-    console.log(this.state);
+    const { product } = this.state;
+    console.log(product);
+
+    if (product.listing_id == null) {
+      return null;
+    }
+    function renderDescription() {
+      const description = product.description;
+      const newDescription = description.slice(0, 40);
+      return newDescription;
+    }
+
+    function renderTitle() {
+      const title = product.title;
+      const newTitle = title.slice(0, 11);
+      return newTitle;
+    }
+
+    function renderPrice() {
+      const price = product.price;
+
+      return `$${price}`;
+    }
+
     return (
       <div className="home-page-single-product-card-wrapper">
         Single Product Card Wrapper
-        <div className="each-product-card-container">Each Product Card</div>
+        <div className="each-product-card-container">
+          <div className="product-image">Product IMAGE here</div>
+          <div className="product-title">{renderTitle()}</div>
+          <div className="description">{renderDescription()}</div>
+          <div className="product-price">{renderPrice()}</div>
+        </div>
       </div>
     );
   }

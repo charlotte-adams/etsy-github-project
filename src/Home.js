@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./Home.css";
 import { FeaturedItem } from "./FeaturedItem.js";
-import { SingleProduct } from "./SingleProduct.js";
+import { SingleProductDetailView } from "./SingleProductDetailView.js";
 
 export class Home extends Component {
-  state = { post: {} };
+  state = { product: {} };
 
   // componentDidMount() {
   //   fetch(``)
   //     .then(response => response.json())
   //     .then(data => {
-  //       this.setState({ post: data });
+  //       this.setState({ product: data });
   //     })
   //     .catch(error => console.error(error));
   // }
@@ -20,7 +20,7 @@ export class Home extends Component {
       <div className="home-page">
         <div className="home-page-wrapper">
           <FeaturedItem />
-          <SingleProduct />
+          <SingleProductDetailView />
         </div>
       </div>
     );
