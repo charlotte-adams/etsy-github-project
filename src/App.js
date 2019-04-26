@@ -3,8 +3,8 @@ import { Header } from "./Header.js";
 import "./App.css";
 import { Route } from "react-router-dom";
 import { Home } from "./Home.js";
+import { SingleProductDetailView } from "./SingleProductDetailView";
 import { Cart } from "./Cart.js";
-
 import { AllProductsContainer } from "./AllProductsContainer.js";
 import { BrowserRouter } from "react-router-dom";
 
@@ -17,6 +17,10 @@ class App extends Component {
             <Header />
 
             <Route exact path="/" component={Home} />
+            <Route
+              path="/singleProductDetails"
+              component={SingleProductDetailView}
+            />
             <Route path="/products" component={AllProductsContainer} />
             <Route path="/cart" component={Cart} />
           </div>

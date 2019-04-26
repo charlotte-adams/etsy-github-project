@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./Home.css";
-import { FeaturedItem } from "./FeaturedItem.js";
-import { SingleProductDetailView } from "./SingleProductDetailView.js";
 
 export class Home extends Component {
   state = { product: {} };
@@ -18,10 +16,7 @@ export class Home extends Component {
   render() {
     return (
       <div className="home-page">
-        <div className="home-page-wrapper">
-          <FeaturedItem />
-          <SingleProductDetailView />
-        </div>
+        <div className="home-page-wrapper">Product Cards go here!</div>
       </div>
     );
   }

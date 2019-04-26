@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Image } from "./Image.js";
 import "./SingleProductDetailView.css";
 
 export class SingleProductDetailView extends Component {
@@ -16,7 +16,6 @@ export class SingleProductDetailView extends Component {
 
   render() {
     const { product } = this.state;
-    console.log(product);
 
     if (product.listing_id == null) {
       return null;
@@ -40,10 +39,12 @@ export class SingleProductDetailView extends Component {
     }
 
     return (
-      <div className="home-page-single-product-card-wrapper">
-        Single Product Card Wrapper
-        <div className="each-product-card-container">
-          <div className="product-image">Product IMAGE here</div>
+      <div className="single-product-detail-view-wrapper">
+        Single Product Detail View Wrapper
+        <div className="single-product-detail-view-container">
+          <div className="product-image">
+            <Image />
+          </div>
           <div className="product-title">{renderTitle()}</div>
           <div className="description">{renderDescription()}</div>
           <div className="product-price">{renderPrice()}</div>
