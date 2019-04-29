@@ -1,0 +1,7 @@
+.single-product-detail-view-container {
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  display: inline-block;
+  background-color: azure;
+}
