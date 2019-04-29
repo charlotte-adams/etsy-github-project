@@ -39,21 +39,19 @@ export class SingleProductDetailView extends Component {
     }
 
     return (
-      <div className="single-product-detail-view-wrapper">
-        <div className="single-product-detail-view-container">
-          <div className="product-image">
-            <Image />
+      <div className="single-product-detail-view-container">
+        <div className="product-image">
+          <Image />
+        </div>
+        <div className="details-single-product">
+          <div className="product-title single-product-detail">
+            {renderTitle()}
           </div>
-          <div className="details-single-product">
-            <div className="product-title single-product-detail">
-              {renderTitle()}
-            </div>
-            <div className="description single-product-detail">
-              {renderDescription()}
-            </div>
-            <div className="product-price single-product-detail">
-              {renderPrice()}
-            </div>
+          <div className="description single-product-detail">
+            {renderDescription()}
+          </div>
+          <div className="product-price single-product-detail">
+            {renderPrice()}
           </div>
         </div>
       </div>
