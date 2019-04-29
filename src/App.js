@@ -18,7 +18,7 @@ class App extends Component {
 
             <Route exact path="/" component={Home} />
             <Route
-              path="/singleProductDetails"
+              path="/singleProductDetails/:id"
               component={SingleProductDetailView}
             />
             <Route path="/products" component={AllProductsContainer} />

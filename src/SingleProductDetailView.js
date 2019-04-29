@@ -6,7 +6,9 @@ export class SingleProductDetailView extends Component {
   state = { product: {} };
 
   componentDidMount() {
-    fetch("http://localhost:8000/listings/638754067")
+    const id = this.props.match.params.id;
+
+    fetch(`http://localhost:8000/listings/${id}`)
       .then(response => response.json())
       .then(data => {
         this.setState({ product: data.results[0] });
@@ -37,7 +39,7 @@ export class SingleProductDetailView extends Component {
     return (
       <div className="single-product-detail-view-container">
         <div className="product-image">
-          <Image />
+          <Image id={this.props.match.params.id} />
         </div>
         <div className="details-single-product">
           <div className="product-title single-product-detail">

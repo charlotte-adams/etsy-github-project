@@ -1,11 +1,7 @@
 .single-product-detail-view-container {
   width: 100%;
   text-align: center;
-  margin: 10px, auto, 10px, auto;
   border: 2px solid black;
   display: inline-block;
   background-color: azure;
-}
-.details-single-product {
-  max-width: 600px;
 }

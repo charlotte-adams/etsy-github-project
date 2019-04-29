@@ -1,6 +1,5 @@
 // import React, { Component } from "react";
 // import { Image } from "./Image.js";
-// import "./SingleProductDetailView.css";
 
 // export class SingleProductDetailView extends Component {
 //   state = { product: {} };
