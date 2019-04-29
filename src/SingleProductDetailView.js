@@ -21,21 +21,17 @@ export class SingleProductDetailView extends Component {
       return null;
     }
     function renderDescription() {
-      const description = product.description;
-      const newDescription = description.slice(0, 131);
+      const newDescription = product.description.slice(0, 131);
       return newDescription;
     }
 
     function renderTitle() {
-      const title = product.title;
-      const newTitle = title.slice(0, 11);
+      const newTitle = product.title.slice(0, 11);
       return newTitle;
     }
 
     function renderPrice() {
-      const price = product.price;
-
-      return `$${price}`;
+      return `$${product.price}`;
     }
 
     return (
