@@ -22,7 +22,7 @@ export class SingleProductDetailView extends Component {
     }
     function renderDescription() {
       const description = product.description;
-      const newDescription = description.slice(0, 40);
+      const newDescription = description.slice(0, 131);
       return newDescription;
     }
 
@@ -40,14 +40,21 @@ export class SingleProductDetailView extends Component {
 
     return (
       <div className="single-product-detail-view-wrapper">
-        Single Product Detail View Wrapper
         <div className="single-product-detail-view-container">
           <div className="product-image">
             <Image />
           </div>
-          <div className="product-title">{renderTitle()}</div>
-          <div className="description">{renderDescription()}</div>
-          <div className="product-price">{renderPrice()}</div>
+          <div className="details-single-product">
+            <div className="product-title single-product-detail">
+              {renderTitle()}
+            </div>
+            <div className="description single-product-detail">
+              {renderDescription()}
+            </div>
+            <div className="product-price single-product-detail">
+              {renderPrice()}
+            </div>
+          </div>
         </div>
       </div>
     );

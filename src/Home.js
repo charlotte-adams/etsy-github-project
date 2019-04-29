@@ -16,7 +16,9 @@ export class Home extends Component {
   render() {
     return (
       <div className="home-page">
-        <div className="home-page-wrapper">Product Cards go here!</div>
+        This is the Home Page
+        <div className="home-page-wrapper">Product Card Wrapper</div>
+        <div className="each-product-card">Each Product Card</div>
       </div>
     );
   }

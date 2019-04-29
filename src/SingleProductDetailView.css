@@ -1,8 +1,16 @@
-.home-page-single-product-card-wrapper {
+.single-product-detail-view-wrapper {
+  width: 100%;
+  /* max-width: 1200px; */
+  text-align: center;
   background-color: azure;
-  margin: 5px;
+  margin: 10px;
 }
 
-.each-product-card-container {
-  background-color: pink;
+.single-product-detail-view-container {
+  margin: 10px, auto, 10px, auto;
+  border: 2px solid black;
+  display: inline-block;
+}
+.details-single-product {
+  max-width: 600px;
 }
